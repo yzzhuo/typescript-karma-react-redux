@@ -1,3 +1,13 @@
+sudo: false
 language: node_js
 node_js:
-  - "4.1"
+  - 'node'
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install
+script:
+  - npm run test
+os:
+  - osx
